@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> rks | music player</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1 , minimum-scale=1"> 
+        <script src="https://kit.fontawesome.com/8c456c6aa2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+      <!-- body header -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Music_player_logo.png" width="30" height="30" alt="">
+              </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active ">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">favorite</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <div class="input-group md-form form-sm form-2 pl-0">
+                  <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
+                  <div class="input-group-append">
+                    <span class="input-group-text red lighten-3" id="basic-text1"><i class="fa fa-search" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </nav>
+
+          <!-- End of body header -->
+            <div id="song-interface">
+              <!-- aside for queue -->
+              <aside id="queue">
+                  <div class="queue-heading">
+                    <h1>Queue</h1>
+                  </div>
+                  <hr>
+                  <div class="items">
+                    <ul>
+                      <li>
+                        <div class="queue-container">
+                          <div class="song-logo">
+                            <img src="https://a10.gaanacdn.com/images/albums/62/2224662/crop_175x175_1537469409_2224662.jpg">
+                          </div>
+                          <div class="song-text">
+                            <a href="">Pal Pal dil ke pass <br> <small> Jabed Mohsine, Shreya Ghosal </small></a>
+                          </div>
+                          <div class="song-heart">
+                            <a><i class="far fa-heart"></i></a>
+                          </div>	
+                        </div>
+                      </li>
+                      <li>
+                        <div class="queue-container">
+                          <div class="song-logo">
+                            <img src="https://a10.gaanacdn.com/images/albums/88/1633088/crop_175x175_1633088.jpg">
+                          </div>
+                          <div class="song-text">
+                            <a href="https://gaana.com/song/aise-na-mujhe-tum-dekho-unwind-instrumental">Aise Na Mujhe Tum Dekho <br> <small>Ajay Singha, Shomu Seal </small></a>
+                          </div>
+                          <div class="song-heart">
+                            <a><i class="far fa-heart"></i></a>
+                          </div>	
+                        </div>
+                      </li>
+                      <li>
+                        <div class="queue-container">
+                          <div class="song-logo">
+                            <img src="https://a10.gaanacdn.com/images/albums/50/3058150/crop_175x175_3058150.jpg">
+                          </div>
+                          <div class="song-text">
+                            <a href="https://gaana.com/album/baatein-karo">Aise Na Mujhe Tum Dekho <br> <small>Vayu </small></a>
+                          </div>
+                          <div class="song-heart">
+                            <a><i class="far fa-heart"></i></a>
+                          </div>	
+                        </div>
+                      </li>https://a10.gaanacdn.com/images/albums/50/3058150/crop_175x175_3058150.jpg
+
+                    </ul>
+
+                  </div>
+              </aside>
+
+              <!-- end of aside -->
+              <!-- main start -->
+              <main>
+<!--                  TIMELINE BAR        -->
+                <div id="timeline-container" class="mb75px">
+                    <div class="timeline-image-container">
+                        <a href="#">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTGNqjMOtqUPHgyV10_030cUTJ_YMB2sTxpW9koUl73FZp8sXHV&usqp=CAU" >
+                                <div class="timeline-image-detail">
+                                <h2>KALA MOVIE</h2>
+                                    <small>south indian</small>
+                                </div>
+                        </a>
+                    </div>
+                    <div class="timeline-image-container">
+                       <a href="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTeRx7vDpsp_6PEoaAHpsYKAPsvs-fIHFSEd-MY3F2T4KBGZZed&usqp=CAU">
+                        <div class="timeline-image-detail">
+                            <h2>XY MOVIE</h2>
+                            <small>Hollywood</small>
+                         </div>
+                        </a>
+                    </div>
+                    <div class="timeline-image-container">
+                        <a href="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSPs5UxH1FXMIhDXCLJmavIiW9N5pgLsFC4oJa6__i61PXUNpV4&usqp=CAU">
+                        </a>
+                        <div class="timeline-image-detail">
+                            <h2>MOTHER INDIA</h2>
+                            <small>Bollywod</small>
+                         </div>
+                    </div>
+                </div>
+                  
+<!--                  LATEST RELEASE          -->
+                  <div id="latest-release"  class="mb75px">
+                      <div class="section-heading">
+                      <h1>Latest Release</h1>
+                      </div>
+                      <div class="latest-release-containers">
+                          <div class="latest-release-container">
+                              <div class="latest-release-image">
+                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT0xEgnByEJfu2Ck4l5FHH1qldG-ZzRa_lSu9dz_Kl0cswvTtvr&usqp=CAU">
+                              </div>
+                              <div class="latest-release-name">
+                                 <h1>onism</h1>
+                                  <p>APR 17, 2020</p>
+                              </div>
+                              <div class="latest-release-time">
+                                 <p> ... </p>
+                                  <p> 4.40 </p>
+                              </div>
+                          </div>
+                          <div class="latest-release-container">
+                              <div class="latest-release-image">
+                                 <img src="https://a10.gaanacdn.com/images/albums/51/3117951/crop_175x175_1586710192_3117951.jpg">
+                              </div>
+                              <div class="latest-release-name">
+                                 <h1>Sayyam Rakh</h1>
+                                  <p>APR 17, 2020</p>
+                              </div>
+                              <div class="latest-release-time">
+                                 <p> ... </p>
+                                  <p> 4.40 </p>
+                              </div>
+                        </div>
+                        <div class="latest-release-container">
+                              <div class="latest-release-image">
+                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT0xEgnByEJfu2Ck4l5FHH1qldG-ZzRa_lSu9dz_Kl0cswvTtvr&usqp=CAU">
+                              </div>
+                              <div class="latest-release-name">
+                                 <h1>onism</h1>
+                                  <p>APR 17, 2020</p>
+                              </div>
+                              <div class="latest-release-time">
+                                 <p> ... </p>
+                                  <p> 4.50 </p>
+                              </div>
+                        </div>
+                        <div class="latest-release-container">
+                              <div class="latest-release-image">
+                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT0xEgnByEJfu2Ck4l5FHH1qldG-ZzRa_lSu9dz_Kl0cswvTtvr&usqp=CAU">
+                              </div>
+                              <div class="latest-release-name">
+                                 <h1>onism</h1>
+                                  <p>APR 17, 2020</p>
+                              </div>
+                              <div class="latest-release-time">
+                                 <p> ... </p>
+                                  <p> 4.50 </p>
+                              </div>
+                        </div>
+                          
+                      </div>
+                  </div>
+                  
+<!--                  POPULAR ARTISTS       -->
+                  <div id="artists" class="mb75px">
+                      <div class="section-heading">
+                      <h1>Popular Artists</h1>
+                      </div>
+                      <div class="artists-containers">
+                      <div class="artists-container">
+                          <div class="artists-block">
+                              <img src="https://a2zwiki.com/wp-content/uploads/2020/01/Arijit-Singh-Wiki.jpg">
+                              <div class="artists-name">
+                                  <h1> Arjit Singh </h1>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="artists-container">
+                          <div class="artists-block">
+                              <img src="https://forhireentertainment.com/wp-content/uploads/2019/11/Neha-Kakkar.png">
+                              <div class="artists-name">
+                                  <h1> Neha Kakkar </h1>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="artists-container">
+                          <div class="artists-block">
+                              <img src="https://qph.fs.quoracdn.net/main-qimg-8ad6adab38c4d3a2551a4685d286cfe7">
+                              <div class="artists-name">
+                                  <h1> Sonu Nigam </h1>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="artists-container">
+                          <div class="artists-block">
+                              <img src="https://www.cheatsheet.com/wp-content/uploads/2020/01/BillieEilishtosingJamesBond.jpg">
+                              <div class="artists-name">
+                                  <h1> Billie </h1>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="artists-container">
+                          <div class="artists-block">
+                              <img src="https://www.samaa.tv/wp-content/uploads/2017/05/ariana-grande.jpg">
+                              <div class="artists-name">
+                                  <h1> Samma </h1>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="artists-container">
+                          <div class="artists-block">
+                              <a href="https://www.youtube.com/channel/UCwppdrjsBPAZg5_cUwQjfMQ">
+                              <img src="https://static.toiimg.com/thumb/msid-65103169,imgsize-188390,width-800,height-600,resizemode-75/65103169.jpg">
+                              </a>
+                              <div class="artists-name">
+                                  <h1> Charlie Puth </h1>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="artists-container">
+                          <div class="artists-block">
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9O2toOjZCNxJjs_QipHK7CHDeBMeCpoWS1eoKC1LbWkkqalDF&usqp=CAU">
+                              <div class="artists-name">
+                                  <h1> Ed. Sheeran </h1>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+<!--                  STATIONS           -->
+                  <div id="station" class="mb75px">
+                     <div class="station-items">
+                         <img src="https://a10.gaanacdn.com/images/occasion/occasion_1582017512_22.png">
+                         <div class="station-items-details"> 
+                             <p> Love </p> 
+                         </div>
+                      </div>
+                      <div class="station-items">
+                          <a href="https://gaana.com/playlist/gaana-dj-hindi-retro">
+                         <img src="https://a10.gaanacdn.com/images/playlists/58/10443358/crop_175x175_10443358_1490341958.jpg">
+                         </a>
+                         <div class="station-items-details"> 
+<!--                             <p> Retro </p> -->
+                         </div>
+                      </div>
+                      <div class="station-items">
+                         <img src="media/profile2.jpg">
+                         <div class="station-items-details"> 
+                             <p> Chill </p> 
+                         </div>
+                      </div>
+                      <div class="station-items">
+                          <a href="https://gaana.com/occasion/workout">
+                         <img src="https://a10.gaanacdn.com/images/occasion/occasion_discover_1545049780_29.png">
+                         </a>
+                         <div class="station-items-details"> 
+<!--                             <p> Workout </p> -->
+                         </div>
+                      </div>
+                      <div class="station-items">
+                         <img src="media/profile2.jpg">
+                         <div class="station-items-details"> 
+                             <p> Rock </p> 
+                         </div>
+                      </div>
+                      <div class="station-items">
+                         <img src="https://a10.gaanacdn.com/images/playlists/4/10443604/crop_175x175_10443604_1490342150.jpg">
+                         <div class="station-items-details"> 
+<!--                             <p> Pop </p> -->
+                         </div>
+                      </div>
+                  </div>
+                  
+<!--                  LATESTS ENGLISH         -->
+                  <div id="latest-english" class="mb75px">
+                      <div class="section-heading">
+                      <h1> Latest English</h1>
+                      </div>
+                      <div class="latest-songs-cntainers">
+                          <div class="latest-songs-container">
+                              <a href="https://gaana.com/song/end-of-time-207">
+                              <img src="https://a10.gaanacdn.com/images/albums/50/3046950/crop_175x175_3046950.jpg">
+                              <h1> End Of Time </h1>
+                              </a>
+                              <p> 18 Apr 2020 </p>
+                          </div>
+                          <div class="latest-songs-container">
+                              <a href="https://gaana.com/song/taki-taki-16">
+                              <img src="https://a10.gaanacdn.com/images/albums/84/2236684/crop_175x175_2236684.jpg">
+                              <h1> Taki Taki </h1>
+                              </a>
+                              <p> 18 Apr 2020 </p>
+                          </div>
+                          <div class="latest-songs-container">
+                              <a href="https://gaana.com/song/let-me-love-you-415">
+                              <img src="https://a10.gaanacdn.com/images/albums/75/1734375/crop_175x175_1734375.jpg">
+                              <h1> Let Me Love </h1>
+                              </a>
+                              <p> 18 Apr 2020 </p>
+                          </div>
+                          <div class="latest-songs-container">
+                              <a href="https://gaana.com/song/faded-156">
+                              <img src="https://a10.gaanacdn.com/images/albums/62/1846262/crop_175x175_1846262.jpg">
+                              <h1> Faded </h1>
+                              </a>
+                              <p> 18 Apr 2020 </p>
+                          </div>
+                      </div>
+                  </div>
+                  
+<!--                  LATESTS HINDI         -->
+                  <div id="latest-english" class="mb75px">
+                      <div class="section-heading">
+                      <h1> Latest Hindi</h1>
+                      </div>
+                      <div class="latest-songs-cntainers">
+                          <div class="latest-songs-container">
+                              <a href="https://gaana.com/song/genda-phool-6">
+                              <img src="https://a10.gaanacdn.com/images/albums/53/3089153/crop_175x175_3089153.jpg">
+                              <h1> Genda fool </h1>
+                              </a>
+                              <p> 18 Apr 2020 </p>
+                          </div>
+                          <div class="latest-songs-container">
+                              <a href="https://gaana.com/song/kalla-sohna-nai-1">
+                              <img src="https://a10.gaanacdn.com/images/song/48/29822848/crop_175x175_1584611883.jpg">
+                              <h1> Kalla Sohna </h1>
+                              </a>
+                              <p> 18 Apr 2020 </p>
+                          </div>
+                          <div class="latest-songs-container">
+                              <a href="https://gaana.com/song/aeroplane-112">
+                              <img src="https://a10.gaanacdn.com/images/albums/13/3089213/crop_175x175_1586871901_3089213.jpg">
+                              <h1> Aeroplane </h1>
+                              </a>
+                              <p> 18 Apr 2020 </p>
+                          </div>
+                          <div class="latest-songs-container">
+                              <a href="https://gaana.com/song/same-beef">
+                              <img src="https://a10.gaanacdn.com/images/song/28/28216928/crop_175x175_1568716060.jpg">
+                              <h1> Same Beef </h1>
+                              </a>
+                              <p> 18 Apr 2020 </p>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  
+                  <br><br>
+              </main>
+              <!-- enf of main -->
+
+            </div>
+              <!-- footer -->
+
+              <footer>
+                <div id="footer-image">
+                  <span class="logo">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQwBTsLBF3IN2L32hj5Nhzpkcd9SW-Cob2e9vx7VHOwHi_3kwr7&usqp=CAU">
+                  </span>
+                </div>
+                <div id="song-info">
+                  <a href="">Pal Pal dil ke pass <br> <small>Jalebi | 2018</small></a>
+                </div>
+
+              <div id="footer-audio">
+                <audio controls>
+                  <source src="media/kudi.mp3" type="audio/mp3">
+                   Your browser does not support the audio element.
+               </audio>
+              </div>
+              <!-- <div id="user">
+                <span class="logo">
+                  <img src="media/profile2.jpg">
+                </span>
+              </div> -->
+            </footer>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

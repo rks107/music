@@ -1,7 +1,9 @@
 
 body {
 	font-family: monospace;
-    background-image: linear-gradient(to right, rgba(0,0,0,1) 30% , rgba(0,0,0,1));
+/*    background-image: linear-gradient(to right, darkslateblue 30% , darkblue);*/
+    width: 100%;
+    background-color: black;
 }
 
 #song-interface {
@@ -23,35 +25,179 @@ body {
     width: 100%;
     margin-bottom: 14px;
 }
+
+#song-interface {
+    position: absolute;
+    top: 7vh;
+    width: 100%;
+    z-index: 0;
+}
+
+/*   HEADER    */
+
+
+#header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 7vh;
+    position: fixed;
+    top: 0px;
+    background-color: #21242e;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    z-index: 1;
+}
+
+#icon {
+    height: 100%;
+    width: 10%;
+}
+
+#icon a img {
+    margin: 2px;
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+}
+
+#icon a img:hover {
+    box-shadow: 0 0 5px white;
+}
+
+#home {
+    height: 100%;
+    width: 10%;
+}
+#home a {
+    text-decoration: none;
+}
+#home p {
+    color: rgba(255,255,255,0.5);
+    font-size: 1.5rem;
+    margin: 1vh;
+}
+#home p:hover {
+    color: red;
+}
+
+#favorite {
+    height: 100%;
+    width: 10%;
+}
+#favorite a {
+    text-decoration: none;
+}
+#favorite p {
+    color: rgba(255,255,255,0.5);
+    font-size: 1.5rem;
+    margin: 1vh;
+}
+#favorite p:hover {
+    color: red;
+}
+#favorite-2 {
+    height: 100%;
+    width: 10%;
+}
+#favorite-2 i {
+    font-size: 4vh;
+    margin: 2vh;
+    color: red;
+}
+#search {
+    height: 100%;
+    width: 50%;
+    margin: 1vh 2vh 1vh 2vh;
+}
+#search form {
+    height: 5vh;
+}
+#search form input {
+    width: 80%;
+    display: inline-block;
+}
+#search form i {
+    position: relative;
+    left: -4vh;
+    color: black;
+    display: inline-block;
+}
+#profile {
+    height: 100%;
+    width: 10%;
+}
+#profile a img {
+    margin: 2px;
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white;
+}
 /*   aside   */
 
 #queue {
 	width:27%;
-	margin: 4px 2px 0px 0px;
+/*	margin: 0px 2px 0px 0px;*/
 	background-color: #21242e;
-/*	border-right: 1px solid white;*/
-	/* border-color: white;
-	border-style: solid; */
 }
 .queue-heading {
-	height: 3rem;
+    position: fixed;
+	height: auto;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    width: 27%;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    margin-bottom: 1vh;
+    background-color: #21242e;
+}
+.queue-heading-title {
+    width: 24%;
 }
 .queue-heading h1 {
-	font-weight: 800;
-	font-size: 1.8rem;
-	letter-spacing: 1.8px;
-	color: white;
+	color: rgba(255,255,255,0.5);
+    font-size: 1.2rem;
+    margin: 1vh;
+    overflow-x: scroll;
 	
 }
+.queue-heading-buttons {
+    width: 70%;
+/*    border: 1px solid white;*/
+    display: flex;
+    flex-direction: row-reverse;
+}
 
+#reset {
+    color: white;
+    background-color: #21242e;
+    border: none;
+    font-size: 1rem;
+}
+
+#submit {
+    font-size: 1rem;
+    color: white;
+    width: 20%;
+    height: 3vh;
+    background-color: #B85641;
+    margin: 1vh;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255,255,255,0.5);
+}
 .queue-container {
    display: flex;
    flex-direction: row;
-   justify-content: space-around;
-   padding: 5px;
+   justify-content: space-between;
+/*   padding: 5px;*/
+    overflow-x: hidden;
+    font-family: cursive;
 }
 .song-logo {
 	width: 10%;
+    padding-top: 1vh;
 }
 .song-text {
 	width: 70%;
@@ -81,6 +227,7 @@ body {
 	vertical-align: center;
 	margin-bottom:0px;
 	padding-bottom:0px;
+    overflow-x: hidden;
 }
 
 .song-text a small {
@@ -89,12 +236,14 @@ body {
 
 .queue-container:hover
 {
-	border:1px solid white;
+/*	border:1px solid white;*/
 	background-color:black;
 	opacity: 50%;
 	border-radius:15px;
 	font-size:1rem;
 	font-weight:800;
+/*    text-decoration: none;*/
+    box-shadow: 0px 0px 5px rgba(255,255,255,0.3);
 }
 .song-heart a:hover
 {
@@ -119,7 +268,7 @@ body {
 /*   main   */
  main {
      width: 70%;
-     margin: 4px;
+/*     margin-top: 4px;*/
  }
 
 /*  timeline bar   */
@@ -128,6 +277,8 @@ body {
     flex-direction: row;
 /*    flex-wrap: wrap;*/
     width: 100%;
+/*    overflow-x: hidden;*/
+/*    overflow-x: scroll;*/
 }
 
 .timeline-image-container {
@@ -181,6 +332,7 @@ body {
     justify-content:space-around;
     flex-wrap: wrap;
     width: 100%;
+    overflow-x: scroll;
 }
 .latest-release-container {
     width: 45%;
@@ -189,21 +341,12 @@ body {
     justify-content: space-between;
     margin: 5px;
 }
-
-.latest-release-container > h1 {
-    font-weight: 800;
-	font-size: 1.8rem;
-	letter-spacing: 1.8px;
-	color: white;
-    padding: 4px;
-    width: 100%;
-}
 .latest-release-image {
     width: 30%;
 }
 .latest-release-image img{
-    height: 100px;
-    width: 80px;
+    height: 80px;
+    width: 60px;
 }
 
 .latest-release-name {
@@ -211,7 +354,7 @@ body {
 }
 
 .latest-release-name h1{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: rgba(225,225,225,0.9);
 }
 
@@ -233,7 +376,7 @@ latest-release-name p{
 
 .latest-release-container:hover {
 /*    border: 1px solid white;*/
-    padding: 4px;
+    padding: 2px;
     box-shadow: 0 0 5px 0 rgba(225,225,225,0.7);
 }
 
@@ -244,6 +387,7 @@ latest-release-name p{
     flex-direction: row;
     height: 150px;
     width: 100%;
+    overflow-x: scroll;
 }
 .artists-container {
     
@@ -271,6 +415,7 @@ latest-release-name p{
     margin: 2px;
     text-align: center;
     padding: 2px;
+    
 }
 .artists-name h1 {
     font-size: 1rem;
@@ -286,11 +431,11 @@ latest-release-name p{
 #station {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+/*    flex-wrap: nowrap;*/
+    justify-content: space-between;
     width: 100%;
     height: 150px;
+    overflow: scroll;
 }
 
 .station-items {
@@ -300,8 +445,8 @@ latest-release-name p{
     
 }
 .station-items img {
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     z-index: 1;
 }
@@ -326,8 +471,6 @@ latest-release-name p{
     height: 120%;
     width: 180px;
 }
-
-
 /*  LATEST ENGLISH     */
 
 .latest-songs-cntainers {
@@ -335,11 +478,12 @@ latest-release-name p{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    height: 260px;
+    height: 200px;
+    overflow-x: scroll;
 }
 
 .latest-songs-container {
-    width: 200px;
+    width: 160px;
     height: 100%;
     margin: 7px;
 	background-color: #21242e;
@@ -352,12 +496,12 @@ latest-release-name p{
 }
 
 .latest-songs-container img {
-    width: 100%;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     
 }
 .latest-songs-container h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: rgba(255,255,255,0.8);
 /*    text-align: center;*/
     padding: 2px;
@@ -366,7 +510,7 @@ latest-release-name p{
 }
 
 .latest-songs-container p {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     color: rgba(255,255,255,0.6);
 /*    text-align: center;*/
     padding: 1px;
@@ -385,6 +529,9 @@ latest-release-name p{
 	 background-color: #21242e;
 	 border-top: 1px solid rgba(255,255,255,0.3);
      width: 100%;
+     height: 7vh;
+     border-top-left-radius: 2%;
+     border-top-right-radius: 2%;
  }
 
  footer img {
@@ -438,11 +585,74 @@ latest-release-name p{
 
  /* media query */
 
+/*  header files   */
+
+@media screen and (min-width:992px)
+{
+    #favorite-2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:992px)
+{
+    #favorite {
+        display: none;
+    }
+}
+
+@media screen and (max-width:576px){
+    #home {
+        display: none;
+    }
+    .section-heading {
+      height: 2rem;
+      font-weight: 800;
+	  font-size: auto;
+      font-family: cursive;
+      color: white;
+      width: 100%;
+     }
+    
+    .latest-release-name {
+        width: 58%;
+    }
+    
+    .latest-release-time {
+        display: none;
+    }
+}
+
+/*   song display   */
+
  @media screen and (max-width:768px) {
 
+     .queue-heading {
+         width: 10%;
+     }
+    .queue-heading-title {
+        width: 100%;
+    }
+    .queue-heading-buttons {
+         display: none;
+     }
+     
+     main {
+         width: 85%;
+     }
 	#footer-audio {
 		width: 80%;
 	}
+    
+     #queue {
+         width: 10%;
+     }
+     #queue img {
+         width: 100%;
+     }
+    .song-logo {
+         width: 100%;
+     }
 	#song-info {
 		display: none;
 	}
@@ -453,4 +663,11 @@ latest-release-name p{
 	.song-heart {
 		display: none;
 	}
+         
  }
+
+@media screen and (max-width:992px) {
+    .song-text {
+        display: none;
+    }
+}

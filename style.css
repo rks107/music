@@ -399,6 +399,7 @@ latest-release-name p{
 .artists-containers {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     height: 150px;
     width: 100%;
     overflow-x: scroll;
@@ -407,15 +408,14 @@ latest-release-name p{
     
     width: 120px;
     height: 100%;
-    margin: 10px;
+    margin: 0px 0px 0px 10px;
 }
 
 .artists-block {
     position: relative;
     top: 0%;
     height: 120px;
-    width:100%;;
-/*    border: 1px solid red;*/
+    width:100%;
     
 }
 .artists-block img {
@@ -426,14 +426,13 @@ latest-release-name p{
 .artists-name {
     height: 30px;
     width: 100%;
-    margin: 2px;
+    padding: 1px 0px;
     text-align: center;
-    padding: 2px;
-    
 }
 .artists-name h1 {
-    font-size: 1rem;
+    font-size: 15.8px;
     color: rgba(225,225,225,0.9);
+    text-overflow: clip;
     
 }
 .artists-block img:hover {
@@ -455,7 +454,7 @@ latest-release-name p{
 .station-items {
     height: 100%;
     width: 150px;
-    margin: 5px;
+    margin: 0px 0px 0px 5px;
     
 }
 .station-items img {
@@ -481,9 +480,12 @@ latest-release-name p{
     font-size: 1.5rem;
 }
 
-.station-items:hover {
-    height: 120%;
-    width: 180px;
+.station-items-details:hover {
+    background-color: rgba(225,225,225,0.9);
+/*
+    height: 140px;
+    width: 140px;
+*/
 }
 /*  LATEST ENGLISH     */
 

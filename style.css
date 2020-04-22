@@ -19,7 +19,7 @@ body {
 .section-heading {
     height: 3rem;
     font-weight: 800;
-	font-size: 1.8rem;
+	font-size: 24.5px;
 	letter-spacing: 1.8px;
 	color: white;
     width: 100%;
@@ -102,9 +102,13 @@ body {
     width: 10%;
 }
 #favorite-2 i {
-    font-size: 4vh;
+    font-size: 3vh;
     margin: 2vh;
+    color: rgba(255,255,255,0.5);
+}
+#favorite-2 i:hover{
     color: red;
+    font-size: 4vh;
 }
 #search {
     height: 100%;
@@ -133,6 +137,9 @@ body {
     height: 6vh;
     width: 6vh;
     border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+#profile a img:hover{
     box-shadow: 0 0 5px white;
 }
 /*   aside   */
@@ -171,20 +178,27 @@ body {
 }
 
 #reset {
-    color: white;
+    color: rgba(255,255,255,0.5);
     background-color: #21242e;
     border: none;
     font-size: 1rem;
 }
+#reset:hover {
+    color: white;
+}
 
 #submit {
     font-size: 1rem;
-    color: white;
+    color: rgba(255,255,255,0.5);
     width: 20%;
     height: 3vh;
     background-color: #B85641;
     margin: 1vh;
     border-radius: 50%;
+    
+}
+#submit:hover{
+    color: white;
     box-shadow: 0 0 5px rgba(255,255,255,0.5);
 }
 .queue-container {
@@ -478,41 +492,42 @@ latest-release-name p{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    height: 200px;
+    height: 147px;
     overflow-x: scroll;
 }
 
 .latest-songs-container {
-    width: 160px;
+    min-width: 129px;
     height: 100%;
-    margin: 7px;
+    margin: 0 0 0 15px;
 	background-color: #21242e;
-    box-shadow: 0 0 5px rgba(255,255,255,0.5)
-    
-/*    border: 1px solid red;*/
+    box-shadow: 1px 1px 5px rgba(255,255,255,0.5);
+}
+.latest-songs-container h1:hover{
+    font-size: 14px;
+/*
+    width: 135px;
+    height: 150px;
+*/
 }
 .latest-songs-container a {
     text-decoration: none;
 }
 
 .latest-songs-container img {
-    width: 160px;
-    height: 160px;
+    width: 100%;
+    height: 114px;
     
 }
 .latest-songs-container h1 {
-    font-size: 1rem;
+    font: 12.2px proximanova-semobold-webfont;
     color: rgba(255,255,255,0.8);
-/*    text-align: center;*/
-    padding: 2px;
-    padding-bottom: 0px;
-    margin-bottom: -4px;
+    margin: 7px 2px;
 }
 
 .latest-songs-container p {
     font-size: 0.8rem;
     color: rgba(255,255,255,0.6);
-/*    text-align: center;*/
     padding: 1px;
     margin-top: -4px;
 }
